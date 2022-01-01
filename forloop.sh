@@ -3,7 +3,7 @@
 for file in `ls *.txt`;
 do
 <<<<<<< HEAD
-    foldername=`echo $file | awk -F. '{print $1}'`;
+    Foldername=`echo $file | awk -F. '{print $1}'`;
     #echo "checking for already existing directory started";
     if [ -d $foldername ];
     then
