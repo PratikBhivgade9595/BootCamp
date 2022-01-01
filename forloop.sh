@@ -2,14 +2,14 @@
 
 for file in `ls *.txt`;
 do
-    foldername=`echo $file | awk -F. '{print $1}'`;
+    Foldername=`echo $file | awk -F. '{print $1}'`;
     #echo "checking for already existing directory started";
-    if [ -d $foldername ];
+    if [ -d $Foldername ];
     then
-       rm -R $foldername;
+       rm -R $Foldername;
     fi
-    #echo creating folder ${foldername};
-    mkdir $foldername;
-    #echo copying ${file} to ${foldername};
-    cp $file $foldername;
+    #echo creating folder ${Foldername};
+    mkdir $Foldername;
+    #echo copying ${file} to ${Foldername};
+    cp $file $Foldername;
 done
